@@ -16,6 +16,6 @@ public class Answer {
 
     public static void numberFormatException() {
         // Напишите свое решение ниже
-
+        int errorParsingString = Integer.parseInt("s123s");
     }
 }
