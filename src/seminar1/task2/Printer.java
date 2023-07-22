@@ -1,5 +1,7 @@
 package seminar1.task2;
 
+import java.util.Arrays;
+
 public class Printer {
     public static void main(String[] args) {
         int[] a = {};
