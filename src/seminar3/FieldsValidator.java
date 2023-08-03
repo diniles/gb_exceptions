@@ -6,7 +6,7 @@ import java.time.DateTimeException;
 import java.time.format.DateTimeFormatter;
 
 public class FieldsValidator {
-    private static final Pattern namePattern = Pattern.compile("^[\\p{L}]+$", Pattern.CASE_INSENSITIVE);
+    private static final Pattern namePattern = Pattern.compile("^[a-zA-Z]{2,}$", Pattern.CASE_INSENSITIVE);
     private static final Pattern phonePattern = Pattern.compile("^[0-9]{7,}$");
 
     public static boolean illegalName(String name) {
