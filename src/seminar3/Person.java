@@ -21,6 +21,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return String.format("<%s><%s><%s><%s><%s><%s>", lastName, firstName, middleName, dateOfBirth, phone, sex);
+        return String.format("<%s><%s><%s><%s><%s><%s>", this.lastName, this.firstName, this.middleName, this.dateOfBirth, this.phone, this.sex);
     }
+
 }
