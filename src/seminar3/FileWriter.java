@@ -13,7 +13,7 @@ public class FileWriter {
     public void writeToFile() {
         File file = new File(this.person.getLastName());
         try (java.io.FileWriter writer = new java.io.FileWriter(file, true)) {
-            writer.write(this.person.toString());
+            writer.write(this.person.toString() + "\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
