@@ -14,7 +14,7 @@ public class FieldsValidator {
         return !matcher.matches();
     }
 
-    public static boolean isPhoneInvalid(String phone) {
+    public static boolean illegalPhone(String phone) {
         Matcher matcher = phonePattern.matcher(phone);
         return !matcher.matches();
     }
