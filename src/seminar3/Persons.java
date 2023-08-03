@@ -1,9 +1,9 @@
 package seminar3;
 
-import seminar3.exceptions.IllegalPersonBirthException;
-import seminar3.exceptions.IllegalPersonNameException;
-import seminar3.exceptions.IllegalPersonPhoneException;
-import seminar3.exceptions.IllegalPersonSexException;
+import seminar3.exceptions.IllegalBirthException;
+import seminar3.exceptions.IllegalNameException;
+import seminar3.exceptions.IllegalPhoneException;
+import seminar3.exceptions.IllegalSexException;
 
 public class Persons {
     public static Person createPerson(String line) {
@@ -19,22 +19,22 @@ public class Persons {
         String phoneNumber = input[4];
         String sex = input[5];
         if (FieldsValidator.illegalName(lastName)) {
-            throw new IllegalPersonNameException("Last name: " + lastName);
+            throw new IllegalNameException("Last name: " + lastName);
         }
         if (FieldsValidator.illegalName(firstName)) {
-            throw new IllegalPersonNameException("First name: " + firstName);
+            throw new IllegalNameException("First name: " + firstName);
         }
         if (FieldsValidator.illegalName(middleName)) {
-            throw new IllegalPersonNameException("Middle name: " + middleName);
+            throw new IllegalNameException("Middle name: " + middleName);
         }
         if (FieldsValidator.illegalDate(birthDate)) {
-            throw new IllegalPersonBirthException(birthDate);
+            throw new IllegalBirthException(birthDate);
         }
         if (FieldsValidator.illegalPhone(phoneNumber)) {
-            throw new IllegalPersonPhoneException(phoneNumber);
+            throw new IllegalPhoneException(phoneNumber);
         }
         if (FieldsValidator.illegalSex(sex)) {
-            throw new IllegalPersonSexException(sex);
+            throw new IllegalSexException(sex);
         }
 
         return new Person(lastName, firstName, middleName, birthDate, phoneNumber, sex);
