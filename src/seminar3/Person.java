@@ -18,6 +18,9 @@ public class Person {
         this.sex = sex;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
 
     @Override
     public String toString() {
